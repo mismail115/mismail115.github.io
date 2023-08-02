@@ -1,0 +1,205 @@
+*{
+    list-style-type: none;
+}
+body {
+    font-family: 'Handjet', cursive;
+    
+}
+.ul-menu {
+     background-color:#333;
+     color: #ffffff; 
+     overflow: hidden;
+     text-align: center; 
+}
+.li-menu {
+    float:left; 
+}
+.a-menu {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    display: block; 
+    padding : 17px;
+}
+.li-menu a:hover{
+    background-color: #000;
+}
+.title-menu{
+    font-size: 40px;
+    display: inline;
+}
+.column {
+      width:50%;
+      float:left;
+      text-align: center
+      ;
+}
+.profile{
+    width: 200px;
+    height: 200px;
+     border-radius: 200px;
+}
+ .social {
+    width: 25 px;
+    padding: 5px
+
+ }
+ .left{
+    width:20%;
+    float:left;
+}
+.right{
+    width:80%;
+    float:left;
+}
+.row {
+ padding: 5px;
+}
+.row:after {
+    display:table;
+    clear:both;
+    content:""
+
+}
+.main-bar {
+    background-color: grey ;
+    display: block;
+    height: 25px;
+}
+.main-bar span {
+    background-color:teal;
+    height: 25px;
+    display:block;
+    color:white;
+    
+}
+.JavaScript {
+    width:90%;
+    animation: JavaScript 2s;
+}
+.Java {
+    width:75%;
+    animation: Java 2s;
+}
+.HTML {
+    width:80%;
+    animation: HTML 2s;
+}
+.Python {
+    width:80%;
+    animation: PythonL 2s;
+}
+.SQL {
+    width:75%;
+    animation: SQL 2s;
+}
+.GitHub {
+    width:98%;
+    animation: GitHub 2s;
+}
+.Automation {
+    width:80%;
+    animation: Automation 2s;
+}
+.React {
+    width:80%;
+    animation: React 2s;
+}
+.API Testing {
+    width:95%;
+    animation: API Testing 2s;
+}
+        
+@keyframes Java {
+    0%{
+        width: 0%;
+        
+    }
+    100% {
+        width:75%;
+    }
+}
+        
+@keyframes HTML {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width:80%;
+    
+        
+@keyframes Python {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width:80%;
+    }
+}
+@keyframes SQL {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width:75%;
+    }
+}
+        
+@keyframes GitHub {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width:80%;
+    }
+    }
+        
+@keyframes Automation {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width:80%;
+    }
+}
+@keyframes React {
+    0%{
+        width: 0%;
+    }
+
+    100% {
+        width:75%;
+    }
+}
+@keyframes API Testing {
+    0%{
+        width: 0%;
+    }
+
+       
+    100% {
+        width:95%;
+    }  
+   } 
+@keyframes JavaScript {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width:90%; 
+    } 
+    }
+}
+}
+.footer {
+    width:100%;
+    height:40px;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+
+}@media screen and (max-width:800px){
+    .column {
+        width:100%
+    }
+}
