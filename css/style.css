@@ -19,12 +19,13 @@ body {
     line-height: 1.6;
 }
 
-a {
-    color: inherit;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-img {
-    max-width: 100%;
+a {
+    color: inherit;
 }
 
 
@@ -268,6 +269,7 @@ nav {
 .profile {
     width: 175px;
     height: 175px;
+    margin: 0 auto;
     object-fit: cover;
     border: 7px solid #ffffff;
     border-radius: 50%;
@@ -432,12 +434,19 @@ nav {
 
 
 /* =========================================================
-   PROJECTS PAGE HEADER
+   PROJECTS SECTION
 ========================================================= */
+
+.projects-section {
+    padding: 0 30px 75px;
+    background: #f7f9fc;
+}
 
 .projects-hero {
     position: relative;
-    padding: 95px 25px 65px;
+    max-width: 1150px;
+    margin: 0 auto 45px;
+    padding: 85px 25px 55px;
     background:
         radial-gradient(
             circle at top right,
@@ -445,6 +454,7 @@ nav {
             transparent 35%
         ),
         linear-gradient(135deg, #f8fafc, #edf4f7);
+    border-radius: 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -478,16 +488,6 @@ nav {
     color: #64748b;
     font-size: 17px;
     line-height: 1.75;
-}
-
-
-/* =========================================================
-   PROJECTS GRID
-========================================================= */
-
-.projects-section {
-    padding: 75px 30px;
-    background: #f7f9fc;
 }
 
 .projects-grid {
@@ -663,7 +663,7 @@ nav {
 
 
 /* =========================================================
-   PROJECTS CALL TO ACTION
+   CONTACT SECTION
 ========================================================= */
 
 .projects-cta {
@@ -730,7 +730,6 @@ nav {
 ========================================================= */
 
 @media screen and (max-width: 950px) {
-
     .skills-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -741,7 +740,6 @@ nav {
 }
 
 @media screen and (max-width: 850px) {
-
     .projects-grid {
         grid-template-columns: 1fr;
         max-width: 650px;
@@ -754,7 +752,6 @@ nav {
 ========================================================= */
 
 @media screen and (max-width: 650px) {
-
     nav {
         position: relative;
     }
@@ -849,6 +846,10 @@ nav {
         padding: 24px;
     }
 
+    .projects-section {
+        padding: 0 18px 50px;
+    }
+
     .projects-hero {
         padding: 70px 18px 50px;
     }
@@ -859,10 +860,6 @@ nav {
 
     .projects-hero > p:last-child {
         font-size: 15px;
-    }
-
-    .projects-section {
-        padding: 50px 18px;
     }
 
     .project-cover {
