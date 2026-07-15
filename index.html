@@ -11,41 +11,42 @@
 
     <meta
         name="description"
-        content="Portfolio of Moustafa Ismail, Software Developer and Data Analyst based in Mississauga, Ontario."
+        content="Software development projects created by Moustafa Ismail, including API applications, social networking platforms, and responsive web projects."
     >
 
     <meta
         name="keywords"
-        content="Moustafa Ismail, Software Developer, Full Stack Developer, Data Analyst, React, Node.js, MongoDB, Python, SQL, Power BI"
+        content="Moustafa Ismail Projects, JavaScript Projects, React Projects, Web Development, Wikipedia API, Full Stack Developer"
     >
 
-    <title>Moustafa Ismail | Software Developer & Data Analyst</title>
+    <title>My Projects | Moustafa Ismail</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/timeline.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ===================================
+         Navigation
+    ==================================== -->
 
     <nav>
         <ul class="ul-menu">
 
             <li class="li-menu">
-                <a class="a-menu" href="#home">
+                <a class="a-menu" href="index.html#home">
                     Home
                 </a>
             </li>
 
             <li class="li-menu">
-                <a class="a-menu" href="#skills">
+                <a class="a-menu" href="index.html#skills">
                     Skills
                 </a>
             </li>
 
             <li class="li-menu">
-                <a class="a-menu" href="#experience">
+                <a class="a-menu" href="index.html#experience">
                     Experience
                 </a>
             </li>
@@ -64,406 +65,333 @@
     </nav>
 
 
-    <!-- Hero Section -->
+    <!-- ===================================
+         Projects Hero
+    ==================================== -->
 
-    <header id="home" class="hero-section">
+    <header class="projects-hero">
 
-        <div class="hero-content">
+        <p class="section-label">
+            Selected Work
+        </p>
 
-            <p class="hero-label">
-                Welcome to My Portfolio
-            </p>
+        <h1>My Projects</h1>
 
-            <h1>Moustafa Ismail</h1>
-
-            <h2>
-                Software Developer
-                <span>|</span>
-                Data Analyst
-            </h2>
-
-            <p class="hero-tagline">
-                Building modern web applications and transforming data
-                into meaningful, actionable insights.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a
-                    href="projects.html"
-                    class="btn btn-primary"
-                >
-                    Explore My Projects
-                </a>
-
-                <a
-                    href="Moustafa-Ismail-Resume.pdf"
-                    class="btn btn-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download
-                >
-                    Download Resume
-                </a>
-
-            </div>
-
-
-            <!-- Professional Links -->
-
-            <div class="hero-socials">
-
-                <a
-                    href="https://github.com/mismail115"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/moustafa-ismail-42295217a/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-                <a href="mailto:Mous.k.ismail@gmail.com">
-                    Email
-                </a>
-
-            </div>
-
-
-            <!-- Profile Image -->
-
-            <div class="hero-profile">
-
-                <img
-                    src="images/profile1png.png"
-                    class="profile"
-                    alt="Moustafa Ismail"
-                >
-
-            </div>
-
-
-            <!-- About Me -->
-
-            <div class="about-summary">
-
-                <h3>About Me</h3>
-
-                <p>
-                    Software Developer and Data Analyst with 3+ years of
-                    hands-on experience building web applications through
-                    freelance projects, internships, open-source contributions,
-                    and personal projects.
-                </p>
-
-                <p>
-                    Skilled in React.js, Node.js, Express.js, MongoDB,
-                    REST APIs, Python, SQL, Power BI, and data visualization.
-                    Passionate about developing scalable, maintainable software
-                    and transforming data into actionable business insights.
-                </p>
-
-            </div>
-
-        </div>
+        <p>
+            A selection of web applications and development projects
+            demonstrating my experience with JavaScript, APIs,
+            responsive design, reusable components, and modern
+            software-development practices.
+        </p>
 
     </header>
 
 
-    <!-- Skills Section -->
+    <!-- ===================================
+         Projects Section
+    ==================================== -->
 
-    <section id="skills" class="skills-section">
+    <main class="projects-section">
 
-        <div class="skills-header">
+        <div class="projects-grid">
 
-            <p class="section-label">
-                Technical Expertise
-            </p>
 
-            <h2>My Skills</h2>
+            <!-- ===================================
+                 Project 1: Wikipedia Search
+            ==================================== -->
 
-            <p class="skills-intro">
-                Technologies and tools I use to build modern applications
-                and transform data into meaningful insights.
-            </p>
+            <article class="project-card">
+
+                <div class="project-cover wikipedia-cover">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <div>
+                        <p>API APPLICATION</p>
+                        <h2>Wikipedia Search</h2>
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Wikipedia Search</h3>
+
+                    <p>
+                        A real-time search application integrated with the
+                        Wikipedia API. The application displays dynamic
+                        suggestions and responsive search results using
+                        asynchronous JavaScript requests.
+                    </p>
+
+                    <p>
+                        API calls and DOM updates were optimized to provide
+                        a fast, responsive, and interactive search experience.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Wikipedia API</span>
+                        <span>Async / Await</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Responsive Design</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/mismail115/Wikipedia-Search"
+                            class="project-btn primary-project-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Code
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ===================================
+                 Project 2: Touch Book
+            ==================================== -->
+
+            <article class="project-card">
+
+                <div class="project-cover touchbook-cover">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <div>
+                        <p>SOCIAL WEB APPLICATION</p>
+                        <h2>Touch Book</h2>
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Touch Book</h3>
+
+                    <p>
+                        A social networking web application featuring
+                        responsive user interactions and content-management
+                        functionality.
+                    </p>
+
+                    <p>
+                        Reusable interface components were developed to
+                        improve usability, maintainability, and user
+                        engagement across the application.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Social Platform</span>
+                        <span>Reusable Components</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Responsive UI</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/mismail115/touchBook"
+                            class="project-btn primary-project-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Code
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ===================================
+                 Project 3: GA-Master
+            ==================================== -->
+
+            <article class="project-card">
+
+                <div class="project-cover ga-cover">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <div>
+                        <p>WEB DEVELOPMENT PROJECT</p>
+                        <h2>GA-Master</h2>
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>GA-Master</h3>
+
+                    <p>
+                        A responsive web-development project created to
+                        demonstrate practical frontend-development skills,
+                        structured layouts, and interactive functionality.
+                    </p>
+
+                    <p>
+                        The project focuses on organized code, reusable
+                        interface elements, usability, and maintainable
+                        web-development practices.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Web Development</span>
+                        <span>Responsive Design</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>UI Development</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/mismail115/GA-Master"
+                            class="project-btn primary-project-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Code
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ===================================
+                 Project 4: Ellerca Health
+            ==================================== -->
+
+            <article class="project-card">
+
+                <div class="project-cover health-cover">
+
+                    <span class="project-number">
+                        04
+                    </span>
+
+                    <div>
+                        <p>HEALTHCARE WEB PROJECT</p>
+                        <h2>Ellerca Health</h2>
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Ellerca Health</h3>
+
+                    <p>
+                        A healthcare-focused web project demonstrating
+                        responsive frontend development and the clear
+                        presentation of health-related content.
+                    </p>
+
+                    <p>
+                        The application emphasizes accessibility,
+                        cross-browser compatibility, responsive layouts,
+                        and consistent user interactions.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Frontend Development</span>
+                        <span>Healthcare</span>
+                        <span>Responsive Design</span>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/mismail115/EllercaHealth"
+                            class="project-btn primary-project-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Code
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
 
         </div>
 
-
-        <div class="skills-grid">
-
-            <!-- Frontend Development -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    &lt;/&gt;
-                </div>
-
-                <h3>Frontend Development</h3>
-
-                <div class="skill-tags">
-                    <span>React.js</span>
-                    <span>Redux</span>
-                    <span>JavaScript ES6+</span>
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>Tailwind CSS</span>
-                    <span>Bootstrap</span>
-                </div>
-
-            </article>
+    </main>
 
 
-            <!-- Backend Development -->
+    <!-- ===================================
+         Call to Action
+    ==================================== -->
 
-            <article class="skill-card">
+    <section class="projects-cta">
 
-                <div class="skill-icon">
-                    { }
-                </div>
+        <p class="section-label">
+            Let’s Connect
+        </p>
 
-                <h3>Backend Development</h3>
+        <h2>Interested in working together?</h2>
 
-                <div class="skill-tags">
-                    <span>Node.js</span>
-                    <span>Express.js</span>
-                    <span>REST APIs</span>
-                    <span>Authentication</span>
-                    <span>Role-Based Access</span>
-                    <span>API Integration</span>
-                </div>
+        <p>
+            Visit my GitHub profile to explore more projects or contact
+            me to discuss software-development and data-analysis
+            opportunities.
+        </p>
 
-            </article>
+        <div class="hero-buttons">
 
+            <a
+                href="https://github.com/mismail115"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View GitHub Profile
+            </a>
 
-            <!-- Databases -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    DB
-                </div>
-
-                <h3>Databases</h3>
-
-                <div class="skill-tags">
-                    <span>MongoDB</span>
-                    <span>MySQL</span>
-                    <span>PostgreSQL</span>
-                    <span>SQL Server</span>
-                    <span>SQL</span>
-                </div>
-
-            </article>
-
-
-            <!-- Programming Languages -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    01
-                </div>
-
-                <h3>Programming Languages</h3>
-
-                <div class="skill-tags">
-                    <span>JavaScript</span>
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>C#</span>
-                </div>
-
-            </article>
-
-
-            <!-- Data Analytics -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    DA
-                </div>
-
-                <h3>Data Analytics</h3>
-
-                <div class="skill-tags">
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>Excel</span>
-                    <span>Power BI</span>
-                    <span>IBM Cognos Analytics</span>
-                    <span>Data Cleaning</span>
-                    <span>Data Wrangling</span>
-                    <span>Exploratory Data Analysis</span>
-                    <span>Data Visualization</span>
-                </div>
-
-            </article>
-
-
-            <!-- Tools and Cloud -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    ⚙
-                </div>
-
-                <h3>Tools &amp; Cloud</h3>
-
-                <div class="skill-tags">
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Postman</span>
-                    <span>Agile / Scrum</span>
-                    <span>CI/CD</span>
-                    <span>IBM Cloud</span>
-                    <span>Azure AI Foundry</span>
-                </div>
-
-            </article>
+            <a
+                href="mailto:Mous.k.ismail@gmail.com"
+                class="btn btn-secondary"
+            >
+                Contact Me
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- Experience Section -->
-
-    <section id="experience">
-
-        <h2 class="experience-title">
-            My Experience
-        </h2>
-
-        <div class="timeline">
-
-
-            <!-- Freelance Web Developer -->
-
-            <div class="container left-timeline">
-
-                <div class="content">
-
-                    <h2>
-                        Jan 2023 – Present
-                        <br>
-                        Freelance Web Developer
-                    </h2>
-
-                    <p>
-                        Built custom full-stack web applications using
-                        React.js, Node.js, Express.js, and MongoDB.
-                    </p>
-
-                    <p>
-                        Developed responsive interfaces, REST APIs,
-                        authentication, role-based access, payment integrations,
-                        and e-commerce features based on client requirements.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- Full Stack Developer Intern -->
-
-            <div class="container right-timeline">
-
-                <div class="content">
-
-                    <h2>
-                        Jun 2024 – Sep 2024
-                        <br>
-                        Full Stack Developer Intern
-                    </h2>
-
-                    <p>
-                        Developed MERN stack modules including user registration,
-                        authentication, profile management, and real-time data
-                        features.
-                    </p>
-
-                    <p>
-                        Resolved more than 30 bugs, improving application
-                        stability and user experience.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- Frontend Developer Intern -->
-
-            <div class="container left-timeline">
-
-                <div class="content">
-
-                    <h2>
-                        Dec 2023 – May 2024
-                        <br>
-                        Frontend Developer Intern
-                    </h2>
-
-                    <p>
-                        Built responsive React interfaces and integrated
-                        REST APIs to deliver user-friendly application features.
-                    </p>
-
-                    <p>
-                        Improved application performance using lazy loading
-                        and supported junior developers through code reviews
-                        and technical guidance.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- Open-Source Contributor -->
-
-            <div class="container right-timeline">
-
-                <div class="content">
-
-                    <h2>
-                        Jan 2021 – Nov 2023
-                        <br>
-                        Open-Source Contributor
-                    </h2>
-
-                    <p>
-                        Contributed to open-source projects and completed
-                        more than 10 personal projects to strengthen
-                        full-stack development skills.
-                    </p>
-
-                    <p>
-                        Created reusable React components and developed
-                        responsive websites for small businesses.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
+    <!-- ===================================
+         Footer
+    ==================================== -->
 
     <footer class="footer">
 
@@ -473,6 +401,12 @@
         </p>
 
         <div class="footer-links">
+
+            <a
+                href="index.html"
+            >
+                Home
+            </a>
 
             <a
                 href="https://github.com/mismail115"
