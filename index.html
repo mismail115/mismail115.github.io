@@ -5,105 +5,710 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Portfolio of Moustafa Ismail, Data Analyst and Full-Stack Developer based in Mississauga, Ontario."
-    >
+    <title>Moustafa Ismail | Data Analyst</title>
 
-    <meta
-        name="keywords"
-        content="Moustafa Ismail, Data Analyst, Full Stack Developer, SQL, Excel, Python, Pandas, NumPy, Power BI, IBM Cognos Analytics, React, Node.js, MongoDB"
-    >
+    <meta name="description"
+        content="Portfolio of Moustafa Ismail - Data Analyst specializing in SQL, Python, Excel, Power BI, Tableau, data visualization and business intelligence.">
 
-    <title>Moustafa Ismail | Data Analyst & Full-Stack Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/timeline.css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7fafc;
+            color: #1e293b;
+            line-height: 1.65;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1100px, 90%);
+            margin: auto;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            background: #1f2b3a;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-content {
+            width: min(1200px, 94%);
+            margin: auto;
+            min-height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: #2bbbad;
+        }
+
+        .nav-name {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 620px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            background:
+                radial-gradient(circle at top left,
+                    rgba(34, 197, 190, 0.10) 0,
+                    rgba(34, 197, 190, 0.10) 120px,
+                    transparent 121px),
+                linear-gradient(135deg, #f8fbfd, #edf6f8);
+        }
+
+        .hero-inner {
+            max-width: 800px;
+            padding: 70px 20px 50px;
+        }
+
+        .eyebrow {
+            color: #119d9a;
+            font-size: 12px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            margin-bottom: 7px;
+            color: #1e293b;
+        }
+
+        .hero-role {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: auto;
+            color: #64748b;
+            font-size: 15px;
+        }
+
+        .hero-buttons {
+            margin-top: 25px;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 12px 22px;
+
+            border-radius: 30px;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: #0d9997;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #087c7b;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: white;
+            border: 1px solid #cad5df;
+            color: #1e293b;
+        }
+
+        .btn-secondary:hover {
+            border-color: #0d9997;
+            color: #0d9997;
+        }
+
+        .hero-links {
+            margin: 17px 0;
+            font-size: 13px;
+        }
+
+        .hero-links a {
+            color: #475569;
+            margin: 0 8px;
+        }
+
+        .hero-links a:hover {
+            color: #0d9997;
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 5px solid white;
+
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.20);
+
+            margin-top: 12px;
+        }
+
+        /* =========================
+           GENERAL SECTION
+        ========================== */
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-light {
+            background: white;
+        }
+
+        .section-soft {
+            background: #eef6f8;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 42px;
+        }
+
+        .section-small {
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            color: #0d9997;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-top: 7px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 10px auto 0;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* =========================
+           ABOUT / SUMMARY
+        ========================== */
+
+        .about-card {
+            max-width: 900px;
+            margin: auto;
+
+            background: white;
+
+            border-radius: 15px;
+
+            padding: 35px;
+
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        .about-card h2 {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        .summary-list {
+            padding-left: 22px;
+        }
+
+        .summary-list li {
+            margin-bottom: 12px;
+            color: #475569;
+        }
+
+        /* =========================
+           EXPERIENCE
+        ========================== */
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .experience-card {
+            background: white;
+
+            border-radius: 14px;
+
+            padding: 30px;
+
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+
+            border-left: 5px solid #0d9997;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 4px;
+        }
+
+        .experience-card h3 {
+            font-size: 20px;
+        }
+
+        .experience-company {
+            color: #0d9997;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .experience-date {
+            color: #64748b;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .experience-card ul {
+            padding-left: 20px;
+        }
+
+        .experience-card li {
+            color: #475569;
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           PROJECTS
+        ========================== */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+
+            border-radius: 14px;
+
+            overflow: hidden;
+
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+
+            transition: 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-header {
+            color: white;
+            padding: 28px;
+        }
+
+        .project-1 {
+            background: linear-gradient(120deg, #17364d, #24a6a4);
+        }
+
+        .project-2 {
+            background: linear-gradient(120deg, #3156ba, #35a8e0);
+        }
+
+        .project-3 {
+            background: linear-gradient(120deg, #6d2fa8, #a653de);
+        }
+
+        .project-number {
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+            opacity: 0.25;
+        }
+
+        .project-type {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+        }
+
+        .project-header h3 {
+            clear: both;
+            font-size: 22px;
+            margin-top: 7px;
+        }
+
+        .project-body {
+            padding: 25px;
+        }
+
+        .project-body h3 {
+            margin-bottom: 12px;
+        }
+
+        .project-body p {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            margin: 18px 0;
+        }
+
+        .tag {
+            display: inline-block;
+
+            background: #edf2f7;
+
+            color: #334155;
+
+            padding: 5px 8px;
+
+            border-radius: 5px;
+
+            font-size: 11px;
+
+            margin: 3px 2px;
+        }
+
+        .project-button {
+            display: inline-block;
+
+            background: #0d9997;
+
+            color: white;
+
+            padding: 8px 15px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* =========================
+           SKILLS
+        ========================== */
+
+        .skills-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+
+            min-height: 220px;
+
+            padding: 24px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+        }
+
+        .skill-icon {
+            width: 38px;
+            height: 38px;
+
+            border-radius: 9px;
+
+            background: #e3f7f6;
+
+            color: #0d9997;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 12px;
+            font-weight: bold;
+
+            margin-bottom: 18px;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 12px;
+        }
+
+        /* =========================
+           EDUCATION
+        ========================== */
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .education-card {
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+        }
+
+        .education-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .education-school {
+            color: #0d9997;
+            font-weight: 700;
+        }
+
+        .education-date {
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        .education-card ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-section {
+            text-align: center;
+        }
+
+        .contact-buttons {
+            margin-top: 25px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #1f2b3a;
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            font-size: 12px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 7px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media(max-width: 900px) {
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media(max-width: 650px) {
+
+            .nav-content {
+                flex-direction: column;
+                padding: 12px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .skills-grid,
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-header {
+                display: block;
+            }
+
+            .experience-date {
+                margin-top: 5px;
+            }
+
+        }
+    </style>
 </head>
+
 
 <body>
 
-    <!-- Navigation -->
+
+    <!-- ======================================
+         NAVIGATION
+    ======================================= -->
+
     <nav>
-        <ul class="ul-menu">
-            <li class="li-menu">
-                <a class="a-menu" href="#home">Home</a>
-            </li>
 
-            <li class="li-menu">
-                <a class="a-menu" href="#skills">Skills</a>
-            </li>
+        <div class="nav-content">
 
-            <li class="li-menu">
-                <a class="a-menu" href="#projects">Projects</a>
-            </li>
+            <div class="nav-links">
 
-            <li class="li-menu">
-                <a class="a-menu" href="#experience">Experience</a>
-            </li>
+                <a href="#home">Home</a>
 
-            <li class="li-menu">
-                <a class="a-menu" href="#contact">Contact</a>
-            </li>
+                <a href="#experience">Experience</a>
 
-            <p class="title-menu">Moustafa Ismail</p>
-        </ul>
+                <a href="#projects">Projects</a>
+
+                <a href="#skills">Skills</a>
+
+                <a href="#education">Education</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <div class="nav-name">
+                Moustafa Ismail
+            </div>
+
+        </div>
+
     </nav>
 
 
-    <!-- Hero -->
-    <header id="home" class="hero-section">
 
-        <div class="hero-content">
+    <!-- ======================================
+         HERO
+    ======================================= -->
 
-            <p class="hero-label">Welcome to My Portfolio</p>
+    <section class="hero" id="home">
 
-            <h1>Moustafa Ismail</h1>
+        <div class="hero-inner">
 
-            <h2>
+            <div class="eyebrow">
+                WELCOME TO MY PORTFOLIO
+            </div>
+
+            <h1>
+                Moustafa Ismail
+            </h1>
+
+            <div class="hero-role">
                 Data Analyst
-                <span>|</span>
-                Full-Stack Developer
-            </h2>
+            </div>
 
-            <p class="hero-tagline">
-                Turning data into meaningful, actionable insights
-                and building practical software solutions.
+            <p class="hero-description">
+
+                Turning data into clear findings, reports,
+                and actionable insights that support
+                business decisions.
+
             </p>
+
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn btn-primary">
+                <a href="#projects"
+                   class="btn btn-primary">
+
                     Explore My Projects
+
                 </a>
 
-                <a
-                    href="Moustafa Ismail_Master Resume.pdf"
-                    class="btn btn-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download
-                >
+
+                <a href="Moustafa Ismail Master Resume.pdf"
+                   target="_blank"
+                   class="btn btn-secondary">
+
                     Download Resume
+
                 </a>
 
             </div>
 
-            <div class="hero-socials">
 
-                <a
-                    href="https://github.com/mismail115"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+            <div class="hero-links">
+
+                <a href="https://github.com/mismail115"
+                   target="_blank">
                     GitHub
                 </a>
 
-                <a
-                    href="https://www.linkedin.com/in/moustafa-ismail-42295217a/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <a href="https://www.linkedin.com/in/moustafa-ismail-42295217a/"
+                   target="_blank">
                     LinkedIn
                 </a>
 
@@ -113,537 +718,484 @@
 
             </div>
 
-            <div class="hero-profile">
-                <img
-                    src="images/1787772000327.jpeg"
-                    class="profile"
-                    alt="Moustafa Ismail"
-                >
-            </div>
 
-            <div class="about-summary">
-
-                <h3>About Me</h3>
-
-                <p>
-                    I’m a Data Analyst with a strong background in software
-                    development, combining analytical thinking with technical
-                    experience to turn data into meaningful insights. I work
-                    with SQL, Excel, Python, Pandas, Power BI, and IBM Cognos
-                    Analytics for data analysis, cleaning, visualization,
-                    dashboards, and reporting.
-                </p>
-
-                <p>
-                    My software-development background gives me hands-on
-                    experience with databases, APIs, frontend and backend
-                    development, allowing me to approach data problems with
-                    a strong technical perspective.
-                </p>
-
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <!-- Skills -->
-    <section id="skills" class="skills-section">
-
-        <div class="skills-header">
-
-            <p class="section-label">Technical Expertise</p>
-
-            <h2>My Skills</h2>
-
-            <p class="skills-intro">
-                Data analytics tools and software-development technologies
-                I use to transform data into insights and build practical
-                applications.
-            </p>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-            <!-- Data Analytics -->
-            <article class="skill-card">
-
-                <div class="skill-icon">DA</div>
-
-                <h3>Data Analytics</h3>
-
-                <div class="skill-tags">
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>Excel</span>
-                    <span>Pandas</span>
-                    <span>NumPy</span>
-                    <span>Jupyter</span>
-                    <span>Power BI</span>
-                    <span>IBM Cognos Analytics</span>
-                    <span>Data Cleaning</span>
-                    <span>Data Wrangling</span>
-                    <span>EDA</span>
-                    <span>Data Visualization</span>
-                    <span>Dashboards</span>
-                    <span>Reporting</span>
-                </div>
-
-            </article>
-
-
-            <!-- Databases -->
-            <article class="skill-card">
-
-                <div class="skill-icon">DB</div>
-
-                <h3>Databases</h3>
-
-                <div class="skill-tags">
-                    <span>SQL</span>
-                    <span>MongoDB</span>
-                    <span>MySQL</span>
-                    <span>PostgreSQL</span>
-                    <span>SQL Server</span>
-                </div>
-
-            </article>
-
-
-            <!-- Programming -->
-            <article class="skill-card">
-
-                <div class="skill-icon">01</div>
-
-                <h3>Programming Languages</h3>
-
-                <div class="skill-tags">
-                    <span>Python</span>
-                    <span>JavaScript</span>
-                    <span>TypeScript</span>
-                    <span>Java</span>
-                    <span>C#</span>
-                </div>
-
-            </article>
-
-
-            <!-- Frontend -->
-            <article class="skill-card">
-
-                <div class="skill-icon">&lt;/&gt;</div>
-
-                <h3>Frontend Development</h3>
-
-                <div class="skill-tags">
-                    <span>React.js</span>
-                    <span>Redux</span>
-                    <span>JavaScript ES6+</span>
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>Tailwind CSS</span>
-                    <span>Bootstrap</span>
-                </div>
-
-            </article>
-
-
-            <!-- Backend -->
-            <article class="skill-card">
-
-                <div class="skill-icon">{ }</div>
-
-                <h3>Backend &amp; APIs</h3>
-
-                <div class="skill-tags">
-                    <span>Node.js</span>
-                    <span>Express.js</span>
-                    <span>REST APIs</span>
-                    <span>API Integration</span>
-                </div>
-
-            </article>
-
-
-            <!-- Tools -->
-            <article class="skill-card">
-
-                <div class="skill-icon">⚙</div>
-
-                <h3>Tools &amp; Cloud</h3>
-
-                <div class="skill-tags">
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Postman</span>
-                    <span>Agile / Scrum</span>
-                    <span>CI/CD</span>
-                    <span>IBM Cloud</span>
-                    <span>Microsoft Azure</span>
-                </div>
-
-            </article>
+            <img
+                src="images/profile1png.png"
+                alt="Moustafa Ismail"
+                class="profile-photo"
+            >
 
         </div>
 
     </section>
 
 
-    <!-- Projects -->
-    <section id="projects" class="projects-section">
 
-        <div class="projects-hero">
+    <!-- ======================================
+         PROFESSIONAL SUMMARY
+    ======================================= -->
 
-            <p class="section-label">Selected Work</p>
+    <section class="section-light">
 
-            <h1>My Projects</h1>
+        <div class="container">
 
-            <p>
-                A selection of data analytics and software-development
-                projects demonstrating data cleaning, analysis,
-                visualization, dashboards, APIs, and full-stack development.
-            </p>
+            <div class="about-card">
+
+                <h2>
+                    Professional Summary
+                </h2>
+
+                <ul class="summary-list">
+
+                    <li>
+                        Data Analyst with hands-on experience
+                        analyzing, cleaning, validating,
+                        and interpreting data from databases,
+                        APIs, and business applications.
+                    </li>
+
+                    <li>
+                        Skilled in SQL, Python, Pandas, Excel,
+                        Power BI, Tableau, and IBM Cognos Analytics
+                        for data analysis, visualization,
+                        dashboards, and reporting.
+                    </li>
+
+                    <li>
+                        Experienced in translating business
+                        requirements and raw data into clear
+                        findings, reports, and actionable insights.
+                    </li>
+
+                    <li>
+                        Strong technical background in software
+                        development, databases, REST APIs,
+                        troubleshooting, data quality,
+                        and cross-functional collaboration.
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="projects-grid">
 
-            <!-- IBM Capstone -->
-            <article class="project-card">
 
-                <div class="project-cover wikipedia-cover">
+    <!-- ======================================
+         PROFESSIONAL EXPERIENCE
+    ======================================= -->
 
-                    <span class="project-number">01</span>
+    <section id="experience" class="section-soft">
 
-                    <div>
-                        <p>DATA ANALYTICS CAPSTONE</p>
-                        <h2>IBM Data Analyst Capstone</h2>
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span class="section-small">
+                    Career Experience
+                </span>
+
+                <h2>
+                    Professional Experience
+                </h2>
+
+            </div>
+
+
+
+            <div class="experience-grid">
+
+
+                <!-- CRACK INTERVIEW -->
+
+                <div class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3>
+                                Data Analyst (Project Contributor)
+                            </h3>
+
+                            <div class="experience-company">
+                                Crack-Interview – Mississauga, ON
+                            </div>
+
+                        </div>
+
+                        <div class="experience-date">
+                            Jun 2024 – Present
+                        </div>
+
                     </div>
+
+
+                    <ul>
+
+                        <li>
+                            Queried application and user data
+                            using SQL and Python to uncover
+                            trends, data-quality issues,
+                            and root causes.
+                        </li>
+
+                        <li>
+                            Cleaned and validated 5,000+ records,
+                            resolving data quality issues
+                            for analysis.
+                        </li>
+
+                        <li>
+                            Improved reporting reliability
+                            by structuring and documenting
+                            data sources and transformations.
+                        </li>
+
+                        <li>
+                            Consolidated data from 15+ web
+                            platforms and 25+ data sources
+                            to uncover key trends
+                            and usage patterns.
+                        </li>
+
+                        <li>
+                            Tracked and compared user engagement
+                            metrics before and after improvements,
+                            identifying a 40% increase in
+                            session completion rate.
+                        </li>
+
+                    </ul>
 
                 </div>
 
-                <div class="project-content">
 
-                    <h3>IBM Data Analyst Capstone</h3>
 
-                    <p>
-                        Capstone project analyzing current and future
-                        developer technology trends and job-market demand
-                        using data collected from APIs and other sources.
-                    </p>
+                <!-- INTERACT HEALTH -->
 
-                    <p>
-                        The project includes data cleaning and preparation,
-                        exploratory analysis, visualizations, an IBM Cognos
-                        Analytics dashboard, and a final presentation.
-                    </p>
+                <div class="experience-card">
 
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>APIs</span>
-                        <span>Jupyter</span>
-                        <span>Data Cleaning</span>
-                        <span>EDA</span>
-                        <span>Data Visualization</span>
-                        <span>IBM Cognos Analytics</span>
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3>
+                                Data Analyst (Internship)
+                            </h3>
+
+                            <div class="experience-company">
+                                Interact Health Pro – Mississauga, ON
+                            </div>
+
+                        </div>
+
+                        <div class="experience-date">
+                            Dec 2023 – May 2024
+                        </div>
+
                     </div>
 
-                    <div class="project-actions">
+
+                    <ul>
+
+                        <li>
+                            Analyzed application and API data
+                            to identify usage trends,
+                            anomalies, and performance patterns.
+                        </li>
+
+                        <li>
+                            Performed data validation and quality
+                            checks to identify inconsistencies
+                            and root causes.
+                        </li>
+
+                        <li>
+                            Tracked key performance metrics,
+                            contributing to a 30% improvement
+                            in response time.
+                        </li>
+
+                        <li>
+                            Summarized findings and presented
+                            insights during sprint planning,
+                            stand-ups, and reviews.
+                        </li>
+
+                        <li>
+                            Collaborated with cross-functional
+                            teams to translate findings into
+                            data-driven improvements.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================
+         PROJECTS
+    ======================================= -->
+
+    <section id="projects" class="section-light">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span class="section-small">
+                    Selected Work
+                </span>
+
+                <h2>
+                    My Projects
+                </h2>
+
+                <p>
+                    Data analytics and software projects
+                    demonstrating data cleaning,
+                    analysis, visualization, dashboards,
+                    APIs, and full-stack development.
+                </p>
+
+            </div>
+
+
+
+            <div class="projects-grid">
+
+
+                <!-- IBM CAPSTONE -->
+
+                <div class="project-card">
+
+                    <div class="project-header project-1">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <div class="project-type">
+                            DATA ANALYTICS CAPSTONE
+                        </div>
+
+                        <h3>
+                            IBM Data Analyst Capstone
+                        </h3>
+
+                    </div>
+
+
+                    <div class="project-body">
+
+                        <h3>
+                            IBM Data Analyst Capstone
+                        </h3>
+
+                        <p>
+                            Analyzed current and future
+                            developer technology trends
+                            and job-market demand using
+                            data collected from APIs
+                            and other sources.
+                        </p>
+
+                        <p>
+                            Cleaned and transformed data,
+                            performed exploratory data
+                            analysis (EDA), and created
+                            visualizations to identify
+                            key trends and insights.
+                        </p>
+
+                        <p>
+                            Built an IBM Cognos Analytics
+                            dashboard and presented key
+                            findings in a final presentation.
+                        </p>
+
+
+                        <div class="tags">
+
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">APIs</span>
+                            <span class="tag">Jupyter</span>
+                            <span class="tag">EDA</span>
+                            <span class="tag">IBM Cognos</span>
+
+                        </div>
+
 
                         <a
                             href="https://github.com/mismail115/ibm-data-analyst-capstone"
-                            class="project-btn primary-project-btn"
                             target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                            class="project-button">
+
                             View Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </article>
 
 
-            <!-- Automobile -->
-            <article class="project-card">
+                <!-- AUTOMOBILE -->
 
-                <div class="project-cover touchbook-cover">
+                <div class="project-card">
 
-                    <span class="project-number">02</span>
+                    <div class="project-header project-2">
 
-                    <div>
-                        <p>DATA ANALYSIS & DASHBOARD</p>
-                        <h2>Automobile Sales Analysis</h2>
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <div class="project-type">
+                            DATA ANALYSIS & DASHBOARD
+                        </div>
+
+                        <h3>
+                            Automobile Sales Analysis
+                        </h3>
+
                     </div>
 
-                </div>
 
-                <div class="project-content">
+                    <div class="project-body">
 
-                    <h3>Automobile Sales Data Analysis & Dashboard</h3>
+                        <h3>
+                            Automobile Sales Data Analysis
+                            & Dashboard
+                        </h3>
 
-                    <p>
-                        Automobile sales data analysis and interactive
-                        dashboard project using Python and data-visualization
-                        libraries to explore and communicate sales patterns.
-                    </p>
+                        <p>
+                            Analyzed historical automobile
+                            sales data to compare recession
+                            vs. non-recession trends,
+                            vehicle efficiency,
+                            advertising expenditure,
+                            unemployment,
+                            consumer confidence,
+                            GDP, and seasonality.
+                        </p>
 
-                    <p>
-                        The project demonstrates data analysis,
-                        visualization, and interactive dashboard development.
-                    </p>
+                        <p>
+                            Built visualizations and an
+                            interactive Dash dashboard
+                            to communicate business insights.
+                        </p>
 
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Matplotlib</span>
-                        <span>Seaborn</span>
-                        <span>Plotly</span>
-                        <span>Dash</span>
-                        <span>Jupyter</span>
-                    </div>
 
-                    <div class="project-actions">
+                        <div class="tags">
+
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Dash</span>
+
+                        </div>
+
 
                         <a
                             href="https://github.com/mismail115/automobile-sales-data-analysis"
-                            class="project-btn primary-project-btn"
                             target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                            class="project-button">
+
                             View Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </article>
 
 
-            <!-- GA-Master -->
-            <article class="project-card">
+                <!-- GA MASTER -->
 
-                <div class="project-cover ga-cover">
+                <div class="project-card">
 
-                    <span class="project-number">03</span>
+                    <div class="project-header project-3">
 
-                    <div>
-                        <p>FULL-STACK WEB APPLICATION</p>
-                        <h2>GA-Master</h2>
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <div class="project-type">
+                            FULL-STACK WEB APPLICATION
+                        </div>
+
+                        <h3>
+                            GA-Master
+                        </h3>
+
                     </div>
 
-                </div>
 
-                <div class="project-content">
+                    <div class="project-body">
 
-                    <h3>GA-Master</h3>
+                        <h3>
+                            GA-Master
+                        </h3>
 
-                    <p>
-                        An AI-powered full-stack web application built with
-                        Next.js and React on the frontend, with Node.js,
-                        Express.js, and Socket.IO on the backend.
-                    </p>
+                        <p>
+                            AI-powered full-stack web application
+                            with a Next.js/React frontend and a
+                            Node.js, Express.js, and Socket.IO
+                            backend.
+                        </p>
 
-                    <p>
-                        The project demonstrates modern full-stack application
-                        structure and real-time web communication.
-                    </p>
+                        <p>
+                            Demonstrates modern full-stack
+                            architecture and real-time
+                            web communication.
+                        </p>
 
-                    <div class="project-tags">
-                        <span>Next.js</span>
-                        <span>React</span>
-                        <span>JavaScript</span>
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>Socket.IO</span>
-                    </div>
 
-                    <div class="project-actions">
+                        <div class="tags">
+
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">Socket.IO</span>
+
+                        </div>
+
 
                         <a
                             href="https://github.com/mismail115/GA-Master"
-                            class="project-btn primary-project-btn"
                             target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                            class="project-button">
+
                             View Code
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </article>
 
-
-            <!-- TouchBook -->
-            <article class="project-card">
-
-                <div class="project-cover health-cover">
-
-                    <span class="project-number">04</span>
-
-                    <div>
-                        <p>BACKEND STARTER PROJECT</p>
-                        <h2>TouchBook</h2>
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>TouchBook</h3>
-
-                    <p>
-                        A lightweight Node.js and Express backend starter
-                        project demonstrating REST API server setup and
-                        backend project structure.
-                    </p>
-
-                    <p>
-                        The current implementation includes an Express server,
-                        a basic GET endpoint, environment-based port
-                        configuration, and a simple development setup.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>JavaScript</span>
-                        <span>REST API</span>
-                        <span>Nodemon</span>
-                    </div>
-
-                    <div class="project-actions">
-
-                        <a
-                            href="https://github.com/mismail115/touchBook"
-                            class="project-btn primary-project-btn"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            View Code
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- Professional Experience -->
-    <section id="experience">
-
-        <h2 class="experience-title">Professional Experience</h2>
-
-        <div class="timeline">
-
-            <div class="container left-timeline">
-                <div class="content">
-
-                    <h2>
-                        Jan 2023 – Present
-                        <br>
-                        Freelance Web Developer
-                    </h2>
-
-                    <p>
-                        Built custom full-stack web applications using
-                        React.js, Node.js, Express.js, and MongoDB.
-                    </p>
-
-                    <p>
-                        Developed responsive interfaces, REST APIs,
-                        authentication, role-based access, payment integrations,
-                        and e-commerce features based on client requirements.
-                    </p>
-
-                </div>
-            </div>
-
-
-            <div class="container right-timeline">
-                <div class="content">
-
-                    <h2>
-                        Jun 2024 – Sep 2024
-                        <br>
-                        Full Stack Developer Intern
-                    </h2>
-
-                    <p>
-                        Developed MERN stack modules including user registration,
-                        authentication, profile management, and real-time
-                        data features.
-                    </p>
-
-                    <p>
-                        Resolved more than 30 bugs, improving application
-                        stability and user experience.
-                    </p>
-
-                </div>
-            </div>
-
-
-            <div class="container left-timeline">
-                <div class="content">
-
-                    <h2>
-                        Dec 2023 – May 2024
-                        <br>
-                        Frontend Developer Intern
-                    </h2>
-
-                    <p>
-                        Built responsive React interfaces and integrated
-                        REST APIs to deliver user-friendly application features.
-                    </p>
-
-                    <p>
-                        Improved application performance using lazy loading
-                        and supported junior developers through code reviews
-                        and technical guidance.
-                    </p>
-
-                </div>
-            </div>
-
-
-            <div class="container right-timeline">
-                <div class="content">
-
-                    <h2>
-                        Jan 2021 – Nov 2023
-                        <br>
-                        Open-Source Contributor
-                    </h2>
-
-                    <p>
-                        Contributed to open-source projects and completed
-                        more than 10 personal projects to strengthen
-                        full-stack development skills.
-                    </p>
-
-                    <p>
-                        Created reusable React components and developed
-                        responsive websites for small businesses.
-                    </p>
-
-                </div>
             </div>
 
         </div>
@@ -651,73 +1203,403 @@
     </section>
 
 
-    <!-- Contact -->
-    <section id="contact" class="projects-cta">
 
-        <p class="section-label">Get In Touch</p>
+    <!-- ======================================
+         SKILLS
+    ======================================= -->
 
-        <h2>Interested in working together?</h2>
+    <section id="skills" class="section-soft">
 
-        <p>
-            Visit my GitHub profile or contact me to discuss
-            data-analysis and full-stack development opportunities.
-        </p>
+        <div class="container">
 
-        <div class="hero-buttons">
 
-            <a
-                href="mailto:Mous.k.ismail@gmail.com"
-                class="btn btn-primary"
-            >
-                Contact Me
-            </a>
+            <div class="section-title">
 
-            <a
-                href="https://github.com/mismail115"
-                class="btn btn-secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View GitHub
-            </a>
+                <span class="section-small">
+                    Technical Expertise
+                </span>
+
+                <h2>
+                    Technical Skills
+                </h2>
+
+            </div>
+
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        DA
+                    </div>
+
+                    <h3>
+                        Data Analysis
+                    </h3>
+
+                    <div class="tags">
+
+                        <span class="tag">SQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Excel</span>
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">Data Validation</span>
+                        <span class="tag">EDA</span>
+                        <span class="tag">Data Wrangling</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        BI
+                    </div>
+
+                    <h3>
+                        Data Visualization & BI
+                    </h3>
+
+                    <div class="tags">
+
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">IBM Cognos Analytics</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">Plotly</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        DB
+                    </div>
+
+                    <h3>
+                        Databases & APIs
+                    </h3>
+
+                    <div class="tags">
+
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">REST APIs</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        TL
+                    </div>
+
+                    <h3>
+                        Tools
+                    </h3>
+
+                    <div class="tags">
+
+                        <span class="tag">Jupyter Notebook</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        AI
+                    </div>
+
+                    <h3>
+                        Cloud & AI
+                    </h3>
+
+                    <div class="tags">
+
+                        <span class="tag">IBM Cloud</span>
+                        <span class="tag">Azure AI Foundry</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        DEV
+                    </div>
+
+                    <h3>
+                        Additional Technical
+                    </h3>
+
+                    <div class="tags">
+
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">React</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Footer -->
-    <footer class="footer">
 
-        <p>
-            © 2026 Moustafa Ismail | Data Analyst & Full-Stack Developer
-        </p>
+    <!-- ======================================
+         EDUCATION & CERTIFICATIONS
+    ======================================= -->
 
-        <div class="footer-links">
+    <section id="education" class="section-light">
 
-            <a
-                href="https://github.com/mismail115"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
+        <div class="container">
 
-            <a
-                href="https://www.linkedin.com/in/moustafa-ismail-42295217a/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                LinkedIn
-            </a>
 
-            <a href="mailto:Mous.k.ismail@gmail.com">
-                Email
-            </a>
+            <div class="section-title">
+
+                <span class="section-small">
+                    Education
+                </span>
+
+                <h2>
+                    Education & Certifications
+                </h2>
+
+            </div>
+
+
+
+            <div class="education-grid">
+
+
+                <!-- NPOWER -->
+
+                <div class="education-card">
+
+                    <h3>
+                        Junior Data Analyst Program
+                    </h3>
+
+                    <div class="education-school">
+                        NPower Canada | Toronto, ON
+                    </div>
+
+                    <div class="education-date">
+                        Jun 2026 – Sep 2026
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            IBM Data Analyst Professional Certificate
+                        </li>
+
+                        <li>
+                            Microsoft Certified:
+                            Azure AI Fundamentals (AI-900)
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- SENECA -->
+
+                <div class="education-card">
+
+                    <h3>
+                        Cloud Computing & Big Data
+                    </h3>
+
+                    <div class="education-school">
+                        Seneca College | Ontario
+                    </div>
+
+                    <div class="education-date">
+                        Jan 2023 – Apr 2023
+                    </div>
+
+                </div>
+
+
+
+                <!-- FANSHAWE -->
+
+                <div class="education-card">
+
+                    <h3>
+                        Post-Graduate Diploma
+                        in Software Testing
+                    </h3>
+
+                    <div class="education-school">
+                        Fanshawe College | Ontario
+                    </div>
+
+                    <div class="education-date">
+                        Aug 2021 – Aug 2022
+                    </div>
+
+                </div>
+
+
+
+                <!-- BACHELOR -->
+
+                <div class="education-card">
+
+                    <h3>
+                        Bachelor of Commerce
+                    </h3>
+
+                    <div class="education-school">
+                        Ain Shams University
+                    </div>
+
+                    <div class="education-date">
+                        Cairo, Egypt
+                    </div>
+
+                </div>
+
+
+            </div>
 
         </div>
+
+    </section>
+
+
+
+    <!-- ======================================
+         CONTACT
+    ======================================= -->
+
+    <section id="contact"
+             class="section-soft contact-section">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span class="section-small">
+                    Get In Touch
+                </span>
+
+                <h2>
+                    Interested in working together?
+                </h2>
+
+                <p>
+                    Feel free to contact me to discuss
+                    Data Analyst, Business Intelligence,
+                    or data-driven opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="contact-buttons">
+
+
+                <a
+                    href="mailto:Mous.k.ismail@gmail.com"
+                    class="btn btn-primary">
+
+                    Contact Me
+
+                </a>
+
+
+                <a
+                    href="https://github.com/mismail115"
+                    target="_blank"
+                    class="btn btn-secondary">
+
+                    View GitHub
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================
+         FOOTER
+    ======================================= -->
+
+    <footer>
+
+        © 2026 Moustafa Ismail |
+        Data Analyst
+
+        <br>
+
+        <a href="https://github.com/mismail115"
+           target="_blank">
+
+            GitHub
+
+        </a>
+
+        <a href="https://www.linkedin.com/in/moustafa-ismail-42295217a/"
+           target="_blank">
+
+            LinkedIn
+
+        </a>
+
+        <a href="mailto:Mous.k.ismail@gmail.com">
+
+            Email
+
+        </a>
 
     </footer>
 
+
 </body>
+
 </html>
